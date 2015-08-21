@@ -5,9 +5,17 @@
 	<title>Quickfire Ajax</title>
 	<link href="styles.css" rel="styles.css">
 	<script src="jquery-2.1.4.min.js"></script>
+	<script src="handlebars-v3.0.3.js"></script>
 	<script src="examples.js"></script>
 </head>
 <body>
+<script id="Ajax-template" type="text/x-handlebars-template">
+  	{{#each this}}
+  		<div style="background-color: {{value}}">
+  			<p>{{color}}</p>
+  		</div>
+  	{{/each}}
+</script>
 	<div class="container"></div>
 </body>
 </html>
